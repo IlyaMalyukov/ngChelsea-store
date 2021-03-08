@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-right: 10px;
+  }
+}
+
+.btn-cart {
+  margin-right: 10px;
+}

@@ -1,0 +1,14 @@
+<div class="container" >
+  <h1>Корзина</h1>
+
+  <div *ngFor="let product of cart">
+    <li class="product">   
+      <img src="{{product.img}}">
+      <div class="product-description">
+        <span><b>{{product.name}}</b></span>
+        <span>{{product.price}} ₽</span>
+      </div>
+      <button id="{{product.id}}" class="button">✕</button>
+    </li>
+  </div>
+</div>

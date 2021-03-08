@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "chelsea"
+  "defaultProject": "chelsea",
+  "cli": {
+    "analytics": false
+  }
 }

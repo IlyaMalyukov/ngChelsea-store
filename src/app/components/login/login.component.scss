@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  &.ng-valid.ng-touched {
+    border: 1px solid #0062cc;
+  }
+}
+
+button {
+  margin-bottom: 15px;
+}
+
+.validation {
+  color: red;
+}

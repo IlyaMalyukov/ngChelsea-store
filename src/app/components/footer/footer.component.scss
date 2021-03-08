@@ -1,0 +1,28 @@
+.row {
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+li {
+  :hover {
+      color: black;
+  }
+}
+
+footer {
+  background: rgba(248, 248, 255, 0.63);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.row {
+  width: 100%;
+}
