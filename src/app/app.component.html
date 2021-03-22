@@ -14,7 +14,9 @@
   
     <div class="group">
       <a class="btn btn-cart btn-outline-primary" routerLink='/cart'>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        ({{productsService.cart.length}})
+      </a>
       <a class="btn btn-outline-primary" routerLink='/login'>Войти</a>
     </div>
 

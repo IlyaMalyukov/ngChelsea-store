@@ -23,6 +23,10 @@ export class ProductsService {
 
   cart: Product[] = [];
 
+  getById(id: number) {
+    return this.products.find(p => p.id === id)
+  }
+
   addToCart(product: Product) {
     this.cart.push(product)
   }
@@ -31,9 +35,4 @@ export class ProductsService {
     let elem = this.cart.indexOf(product)
     this.cart.splice(elem, 1)
   }
-
-  getById(id: number) {
-    return this.products.find(p => p.id === id)
-  }
-
 };

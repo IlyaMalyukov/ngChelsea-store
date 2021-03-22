@@ -25,4 +25,16 @@ i {
 
 .btn{
   width: 31rem;
+  color: #007bff;
+  border: 1px solid #007bff;
+
+  &:hover {
+    color: white;
+    background-color: #007bff;
+  }
+
+  &:active {
+    color: #007bff;
+    background-color: white;
+  }
 }

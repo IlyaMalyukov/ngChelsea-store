@@ -9,7 +9,7 @@ import { ProductsService } from './services/products.service';
 export class AppComponent {
   title = 'chelsea';
 
-  constructor(private productsService: ProductsService){
+  constructor(public productsService: ProductsService){
 
   }
 }
