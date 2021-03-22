@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+i {
+  font-size: x-large;
+}
+
+.btn{
+  width: 31rem;
+}

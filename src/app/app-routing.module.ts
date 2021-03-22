@@ -6,9 +6,13 @@ import { UsersComponent } from './components/users/users.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { CatalogComponent } from './components/catalog/catalog.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'catalog', component: CatalogComponent},
+  {path: 'catalog/:id', component: ProductPageComponent},
   {path: 'users', component: UsersComponent},
   {path: 'login', component: LoginComponent},
   {path: 'cart', component: CartComponent},

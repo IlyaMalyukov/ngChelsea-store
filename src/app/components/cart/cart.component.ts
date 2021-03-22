@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { ProductsService, Product } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-cart',
@@ -6,20 +7,13 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  cart!: any;
 
-  constructor() { 
+  constructor(public productsService: ProductsService) { 
   }
 
   ngOnInit() {
-    this.cart = [
-    {id: 1, name: 'Футболка 1', img: "https://clck.ru/Smwci", category: 'Футболки', price: 2500},
-    {id: 2, name: 'Футболка 2', img: "https://clck.ru/Smwee", category: 'Футболки', price: 2500}
-    ]
-    if(!this.cart){
-      this.cart = "Ничего не добавлено"
-    } else { 
-      this.cart;
+    if(this.productsService.cart.length !== 0){
+      this.productsService.cart
     }
   }
 

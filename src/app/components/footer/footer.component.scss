@@ -16,9 +16,10 @@ li {
 
 footer {
   background: rgba(248, 248, 255, 0.63);
-  position: absolute;
+  position: static;
   width: 100%;
   left: 0;
+  bottom: 0;
   margin: 0 auto;
   padding-left: 15px;
 }

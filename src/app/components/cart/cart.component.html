@@ -1,14 +1,21 @@
 <div class="container" >
   <h1>Корзина</h1>
 
-  <div *ngFor="let product of cart">
+  <div
+  *ngFor="let product of productsService.cart">
     <li class="product">   
       <img src="{{product.img}}">
       <div class="product-description">
         <span><b>{{product.name}}</b></span>
         <span>{{product.price}} ₽</span>
       </div>
-      <button id="{{product.id}}" class="button">✕</button>
+      <button
+        (click)="productsService.removeFromCart(product)"
+        class="button">✕</button>
     </li>
+  </div>
+
+  <div *ngIf="productsService.cart.length === 0">
+    <h4>Ничего не добавлено</h4>
   </div>
 </div>

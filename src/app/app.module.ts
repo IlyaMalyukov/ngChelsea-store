@@ -14,6 +14,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 
 import { ProductsService } from './services/products.service';
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { CatalogComponent } from './components/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ProductsService } from './services/products.service';
     LoginComponent,
     FooterComponent,
     CartComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ProductPageComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,

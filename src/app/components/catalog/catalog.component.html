@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Каталог</h1>
+
+  <div class="album py-5">
+    <div class="container grid-container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col mb-15" *ngFor="let product of productsService.products">
+              <a [routerLink]="['/catalog', product.id]">
+              <div class="card shadow-sm">
+                  <img class="card-img" src="{{product.img}}">
+                <div class="card-body">
+                  <div class="align-items-center">
+                    <h5 class="product-name">{{product.name}}
+                        <br>
+                      <small class="text-muted">{{product.price}} ₽</small>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+
+</div>
+
+

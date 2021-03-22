@@ -22,7 +22,6 @@ export class LoginComponent implements OnInit {
 
   submit(){
     if(this.form.valid) {
-      console.log(this.form);
       const formData = {...this.form.value};
     };
   };

@@ -1,5 +1,13 @@
 import { Injectable } from "@angular/core";
 
+export interface Product {
+  id: number
+  name: string
+  img: string
+  category: string
+  price: number
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,4 +20,20 @@ export class ProductsService {
     {id: 5, name: 'Комплект 1', img: "https://clck.ru/Smwit", category: 'Комплекты', price: 3500},
     {id: 6, name: 'Комплект 2', img: "https://clck.ru/Smwjd", category: 'Комплекты', price: 3500}
   ];
+
+  cart: Product[] = [];
+
+  addToCart(product: Product) {
+    this.cart.push(product)
+  }
+
+  removeFromCart(product: Product) {
+    let elem = this.cart.indexOf(product)
+    this.cart.splice(elem, 1)
+  }
+
+  getById(id: number) {
+    return this.products.find(p => p.id === id)
+  }
+
 };
